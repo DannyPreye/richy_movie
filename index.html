@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <link rel="stylesheet" href="./dist/index.css" />
+    </head>
+    <body>
+        <header
+            class="bg-purple-800 flex justify-between items-center px-4 py-6 text-[white] font-bold"
+        >
+            <span>Logg</span>
+            <ul class="lg:flex gap-[2rem] hidden">
+                <li>Home</li>
+                <li>Tv series</li>
+                <li>Movies</li>
+                <li>Bookmark</li>
+            </ul>
+
+            <div class="w-[20px] flex flex-col gap-[2px] lg:hidden">
+                <span class="w-full h-[5px] bg-white rounded-[5px]"></span>
+                <span class="w-full h-[5px] bg-white rounded-[5px]"></span>
+                <span class="w-full h-[5px] bg-white rounded-[5px]"></span>
+            </div>
+        </header>
+
+        <main class="mt-32">
+            <!-- ::::::::::::::::::::::: HERO SECTION :::::::::::::::::::: -->
+            <div class="flex px-8 items-center justify-between gap-[10%]">
+                <img src="./assets/mov.svg" alt="" class="w-[40%]" />
+                <div class="flex flex-col gap-4 items-start">
+                    <h1 class="font-bold text-purple-900 text-[2rem]">
+                        Richy Movie World
+                    </h1>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Error, facere. Quos, fugiat odit debitis hic eligendi
+                        aliquam error culpa asperiores. Ducimus ipsa at
+                        necessitatibus reiciendis a? Non laboriosam adipisci
+                        quis. Lorem ipsum dolor sit amet consectetur adipisicing
+                        elit. Reiciendis molestiae, doloribus praesentium ullam
+                        velit sed alias quisquam. Sunt ut quidem dolorum
+                        officiis non, similique et! Aliquid iusto soluta
+                        incidunt eaque.
+                    </p>
+                    <button
+                        class="px-4 py-2 bg-purple-900 rounded-[10px] font-bold text-white"
+                    >
+                        Get Started
+                    </button>
+                </div>
+            </div>
+
+            <!-- :::::::::::::::::: MOVIES :::::::::::::::::::::: -->
+
+            <div class="grid mt-8 bg-purple-800 px-8 py-9">
+                <h2 class="font-bold text-[1.8rem] text-white">
+                    Trending Movies
+                </h2>
+
+                <div
+                    id="movie"
+                    class="mt-4 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5"
+                ></div>
+            </div>
+        </main>
+
+        <script src="./index.js"></script>
+    </body>
+</html>
